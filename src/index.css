@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+.journey{
+  color: black;
+  border-color: black;
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+
+  outline: 0;
+
+  padding: 10px;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+
+  font-size: xx-large;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.journey::after{
+content: '';
+  position: absolute;
+  top: 2px;
+left: 2px;
+width: calc(100% - 4px);
+height: 50%;
+/* background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2)); */
+
+/* .start{
+  animation: explode 1s ease-in;  
+}
+
+@keyframes explode{
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+
+  50% {
+      transform: scale(1.3);
+      opacity: 0.7;
+  }
+
+  100% {
+      transform: scale(3);
+      opacity: 0;
+      visibility: none;
+  }
+
+} */
+
+.header-theme{
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+}
+
+.h-fake-full{
+  height: 90%;
 }
