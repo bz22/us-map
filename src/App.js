@@ -3,18 +3,16 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import USMap from "./Components/US-map";
 import ReactTooltip from "react-tooltip";
+import Details from './Components/detailed-info';
 
 function App() {
   const [content, setContent] = useState("");
   return (
-    <div className = "">
+    <div>
       <Header />
-      <div>
-        <USMap className = "" setTooltipContent={setContent} />
-        <ReactTooltip>{content}</ReactTooltip>
-      </div>
-      <div className = "flex w-full h-16 bg-black">
-      </div>
+      <USMap setTooltipContent={setContent} />
+      <ReactTooltip>{content}</ReactTooltip>
+      <Details />
       {/* <Footer className = "sticky"/> */}
     </div>
   );
